@@ -4,6 +4,10 @@ PWD := $(shell pwd)
 LOCAL_UID := $(shell id -u $$USER)
 CMD ?= 
 
+.PHONY: update
+update:
+	# update the docker image
+	docker pull $(DOCKERHUB_USER)/jupylab\:latest
 
 .PHONY: run
 run:
