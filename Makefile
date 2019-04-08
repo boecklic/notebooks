@@ -3,7 +3,25 @@ RSYNC = rsync
 DOCKERHUB_USER = boecklic
 PWD := $(shell pwd)
 LOCAL_UID := $(shell id -u $$USER)
-CMD ?= 
+CMD ?=
+SRCDIR = .
+CONVERTED_HTML := converted/html
+SRCEXT := ipynb
+HTMLEXT := html
+
+# find all 'true' .ipynb files, exclude checkpoint files
+IPYNB_FILES := $(shell find $(SRCDIR) -type f -name '*.$(SRCEXT)' | grep -v  ".ipynb_checkpoints")
+HTML_FILES := $(patsubst $(SRCDIR)/%,$(CONVERTED_HTML)/%,$(IPYNB_FILES:.$(SRCEXT)=.$(HTMLEXT)))
+
+.PHONY: all
+all: vars $(HTML_FILES)
+	@echo "Done"
+
+.PHONY: vars
+vars:
+	@echo "IPYNB_FILES: $(IPYNB_FILES)"
+	@echo "HTML_FILES: $(HTML_FILES)"
+
 
 .PHONY: update
 update:
@@ -23,8 +41,16 @@ run:
 		-e LOCAL_UID=$(LOCAL_UID) \
 		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest $(CMD)
 
+$(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
+	@echo $<
+	@echo $@
+	@echo $(patsubst $PWD/%,%,$<)
+	$(DOCKER) run --rm -it --init \
+		-e LOCAL_UID=$(LOCAL_UID) \
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest jupyter nbconvert --execute --to html $< --output-dir $(dir $@)
+
 .PHONY: export
-export:
+export: $(HTML_FILES)
 	#@echo ${LOCAL_UID}
 	# - Bind container port 8888 (the notebooks port)
 	#   to host port 80
@@ -32,7 +58,4 @@ export:
 	#   uid running the container
 	# - mount the local directory as /home/user inside
 	#   the container
-	$(DOCKER) run --rm -it --init \
-		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest jupyter nbconvert --execute --to html mvt/roadmap_openlayers.ipynb --output-dir converted/html
-	$(RSYNC) converted/html/* /home/ltboc/src/public_html/notebooks/
+	$(RSYNC) --relative converted/html/* /home/ltboc/src/public_html/notebooks/
