@@ -51,11 +51,11 @@ $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 
 .PHONY: export
 export: $(HTML_FILES)
-	#@echo ${LOCAL_UID}
-	# - Bind container port 8888 (the notebooks port)
-	#   to host port 80
-	# - set the env variable LOCAL_UID to the host users
-	#   uid running the container
-	# - mount the local directory as /home/user inside
-	#   the container
-	$(RSYNC) --relative converted/html/* /home/ltboc/src/public_html/notebooks/
+	# - Generate html files from all .ipynb files found in
+	#   in this folder and subfolders
+	# - rsync all html files to public_html
+	# - rsync all assets to public_html
+	@echo "sync files..."
+	$(RSYNC) -av --relative converted/./html/** /home/ltboc/src/public_html/notebooks/
+	@echo "sync assets..."
+	$(RSYNC) -av --relative ././assets/** ././**/assets/** /home/ltboc/src/public_html/notebooks/html/
