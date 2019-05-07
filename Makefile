@@ -45,7 +45,7 @@ $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 	@echo $<
 	@echo $@
 	@echo $(patsubst $PWD/%,%,$<)
-	$(DOCKER) run --rm -it --init \
+	$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
 		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest jupyter nbconvert --execute --to html $< --output-dir $(dir $@)
 
