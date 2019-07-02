@@ -3,4 +3,5 @@
 .local
 .cache
 *.html
+.pki/
 converted/*
