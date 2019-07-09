@@ -29,6 +29,7 @@ PNG_FILES := $(join \
 #PNG_FILES := $(DIO_FILES:.$(DIOEXT)=.$(PNGEXT))
 CONV_PNG_FILES := $(patsubst $(SRCDIR)/%,$(CONVERTED_PNG)/%,$(DIO_FILES:.$(DIOEXT)=.$(PNGEXT)))
 
+DOCKER_TAG=0.35.6
 
 .PHONY: all
 all: vars $(HTML_FILES)
@@ -47,7 +48,7 @@ vars:
 .PHONY: update
 update:
 	# update the docker image
-	docker pull $(DOCKERHUB_USER)/jupylab\:latest
+	docker pull $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG)
 
 .PHONY: run
 run:
@@ -60,7 +61,7 @@ run:
 	#   the container
 	$(DOCKER) run --rm -it --init -p 8888:8888 \
 		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest $(CMD)
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) $(CMD)
 
 $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 	@echo $<
@@ -68,7 +69,7 @@ $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 	@echo $(patsubst $PWD/%,%,$<)
 	$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest jupyter nbconvert --execute --to html $< --output-dir $(dir $@)
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) jupyter nbconvert --execute --to html $< --output-dir $(dir $@)
 
 $(CONVERTED_SVG)/%.$(SVGEXT): $(SRCDIR)/%.$(DIOEXT)
 	@echo $<
@@ -77,7 +78,7 @@ $(CONVERTED_SVG)/%.$(SVGEXT): $(SRCDIR)/%.$(DIOEXT)
 	mkdir -p $(dir $@)
 	$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest drawio-batch $< $@
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) drawio-batch $< $@
 
 #%.$(PNGEXT): %.$(DIOEXT)
 #	@echo $<
@@ -86,7 +87,7 @@ $(CONVERTED_SVG)/%.$(SVGEXT): $(SRCDIR)/%.$(DIOEXT)
 #	mkdir -p $(dir $@)
 #	$(DOCKER) run --rm --init \
 #		-e LOCAL_UID=$(LOCAL_UID) \
-#		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest drawio-batch $< $@
+#		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) drawio-batch $< $@
 
 #$(CONV_PNG_FILES)/%.$(PNGEXT): $(SRCDIR)/%.$(DIOEXT)
 #	@echo "tst"
@@ -110,7 +111,7 @@ $(CONVERTED_SVG)/%.$(SVGEXT): $(SRCDIR)/%.$(DIOEXT)
 	@echo $*
 	$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:latest drawio-batch $(subst assets/,,$(subst .png,.dio,$@)) $@
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) drawio-batch $(subst assets/,,$(subst .png,.dio,$@)) $@
 
 
 #%.$(PNGEXT): $$(addsuffix .dio,$$(subst assets/,,$$@))
