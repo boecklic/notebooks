@@ -27,6 +27,14 @@
     - https://restful-api-design.readthedocs.io/en/latest/methods.html
 
 - Monitoring
+- GIND: git is not a database
+
+- donts with diemo
+    - upload.geo.admin.ch/.../admin
+    - no logging
+    - no tests involving db
+    - no orm
+    - schema validation in dict and not json
 
 ### Frontend
 - https://www.heise.de/developer/artikel/iframes-der-heilige-Gral-bei-verteilten-Webanwendungen-4496075.html?seite=4
