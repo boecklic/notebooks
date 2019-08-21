@@ -13,13 +13,19 @@
     - functional
     - data
     - caching
+- all logic for one service in the same repo
+    - zappa
+    - serverless
+    - aws cdk https://aws.amazon.com/blogs/aws/aws-cloud-development-kit-cdk-typescript-and-python-are-now-generally-available/
+- the lower the tech stack, the more general
 - contracts
 - microservice (-mesh?)
     - 
 - no premature optimization, no mixture of architecture and optimization for speed or relability
 - public vs. internal apis
-- all logic for one piece at one point
-- the lower the tech stack, the more general
+
+- tech-circle:
+    - https://realpython.com/python-f-strings/
 
 - rest best practice: 
     - https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9?gi=6a9edea3853d
@@ -48,6 +54,11 @@
 - clean code
     - https://www.heise.de/developer/artikel/Uncle-Bob-Nichts-geschieht-in-der-heutigen-Gesellschaft-ohne-Software-4442721.html?seite=3
     - https://www.heise.de/developer/artikel/Die-Perversion-agiler-Metaphern-4466436.html
+
+- im moment:
+    - angst etwas zu verändern
+    - der Berg ist zu gross, man weiss nicht wo anfangen
+    - aktuelle architektur verhindert ausprobieren und lernen
 
 ## Organisation
 - https://toggl.com/ Time tracking
