@@ -15,6 +15,7 @@
     - caching
 - all logic for one service in the same repo
     - zappa
+    - http://apex.run/
     - serverless
     - aws cdk https://aws.amazon.com/blogs/aws/aws-cloud-development-kit-cdk-typescript-and-python-are-now-generally-available/
 - the lower the tech stack, the more general
