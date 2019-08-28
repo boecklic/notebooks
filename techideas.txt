@@ -26,6 +26,8 @@
 - no premature optimization, no mixture of architecture and optimization for speed or relability
 - public vs. internal apis
 
+
+
 - tech-circle:
     - https://realpython.com/python-f-strings/
 
@@ -33,6 +35,7 @@
     - https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9?gi=6a9edea3853d
     - https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/
     - https://restful-api-design.readthedocs.io/en/latest/methods.html
+    - https://google.github.io/styleguide/jsoncstyleguide.xml#Empty/Null_Property_Values
 
 - Monitoring
 - GIND: git is not a database
