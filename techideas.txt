@@ -1,3 +1,7 @@
+# Vision
+
+- Data integration is a productive process
+- Meteo Schweiz can register a new realtive layer via api and POST realtime data
 
 # Credos
 
