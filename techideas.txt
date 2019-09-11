@@ -54,6 +54,9 @@
 ### Frontend
 - https://www.heise.de/developer/artikel/iframes-der-heilige-Gral-bei-verteilten-Webanwendungen-4496075.html?seite=4
 
+### SEO
+- https://www.mindk.com/blog/optimizing-single-page-applications/
+
 
 ## Team/Organisational
 - more IT knowhow (1 more senior IT/cloud position)
@@ -78,3 +81,4 @@
 £400.00+£80.00 VAT
 1000 hotel
 600 reise
+
