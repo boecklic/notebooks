@@ -30,16 +30,17 @@
 - no premature optimization, no mixture of architecture and optimization for speed or relability
 - public vs. internal apis
 
+## REST
+- https://martinfowler.com/articles/richardsonMaturityModel.html#level3
+- https://www.moesif.com/blog/api-guide/getting-started-with-apis/#
+- https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9?gi=6a9edea3853d
+- https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/
+- https://restful-api-design.readthedocs.io/en/latest/methods.html
+- https://google.github.io/styleguide/jsoncstyleguide.xml#Empty/Null_Property_Values
+- https://microservices.io/patterns/apigateway.html
+- https://microservices.io/patterns/data/api-composition.html
+- https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/#
 
-
-- tech-circle:
-    - https://realpython.com/python-f-strings/
-
-- rest best practice: 
-    - https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9?gi=6a9edea3853d
-    - https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/
-    - https://restful-api-design.readthedocs.io/en/latest/methods.html
-    - https://google.github.io/styleguide/jsoncstyleguide.xml#Empty/Null_Property_Values
 
 - Monitoring
 - GIND: git is not a database
@@ -73,12 +74,10 @@
     - der Berg ist zu gross, man weiss nicht wo anfangen
     - aktuelle architektur verhindert ausprobieren und lernen
 
+- tech-circle:
+    - https://realpython.com/python-f-strings/
+
+
 ## Organisation
 - https://toggl.com/ Time tracking
-
-
-£665.00+£133.00 VAT
-£400.00+£80.00 VAT
-1000 hotel
-600 reise
 
