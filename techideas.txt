@@ -52,6 +52,8 @@
     - no orm
     - schema validation in dict and not json
 
+- helpdesk: https://meta.stackexchange.com/questions/2267/are-there-any-clones-alternatives-for-running-a-stack-exchange-style-qa-site
+
 ### Frontend
 - https://www.heise.de/developer/artikel/iframes-der-heilige-Gral-bei-verteilten-Webanwendungen-4496075.html?seite=4
 
