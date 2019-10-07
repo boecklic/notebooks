@@ -28,7 +28,9 @@
 - microservice (-mesh?)
     - 
 - no premature optimization, no mixture of architecture and optimization for speed or relability
-- public vs. internal apis
+- public vs. internal apis (motion: https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20184276)
+
+- Rewrite: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 
 ## REST
 - https://martinfowler.com/articles/richardsonMaturityModel.html#level3
@@ -40,7 +42,11 @@
 - https://microservices.io/patterns/apigateway.html
 - https://microservices.io/patterns/data/api-composition.html
 - https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/#
+- https://www.spatineo.com/what-is-wfs3-ogc-api-features/ (WFS 3.0)
+- http://docs.opengeospatial.org/DRAFTS/17-069.html#rc_oas30
 
+## Docu
+- https://www.heise.de/ct/artikel/Stack-Overflow-Gruender-Joel-Spolsky-Dokumentation-ist-ein-Mythos-4482941.html
 
 - Monitoring
 - GIND: git is not a database
@@ -79,6 +85,8 @@
 - tech-circle:
     - https://realpython.com/python-f-strings/
 
+- recruiting:
+    - https://dev.to/javinpaul/20-basic-algorithms-problems-from-coding-interviews-4o76?mkt_tok=eyJpIjoiWVRsbE1EWmlNakJrWlRsaCIsInQiOiJzZnQrXC9LWldyNTE4bElxeEUySEFQSHhlbWpZTktKcElsYlRBMDNocmtjQzlTZXgycTBtRDRFZWNHTTVFOXlISUw0S29DZGZaTVp2NzNNTFlmbEdERlFGUkJVU3R2d0hmVWUxRWd4c2xRXC9yenl2MG9TM2oxTWNPN0ZcL3JvZkYrRCJ9
 
 ## Organisation
 - https://toggl.com/ Time tracking
