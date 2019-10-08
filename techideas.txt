@@ -50,6 +50,7 @@
 
 - Monitoring
 - GIND: git is not a database
+- Daten sind KEIN code!!!!
 
 - donts with diemo
     - upload.geo.admin.ch/.../admin
@@ -97,3 +98,39 @@
 ## Franz:
 l'échec
 se friter
+
+
+## Todo:
+- Bila Termine
+- Bila mit Patrick Gamma
+- Bila Gilbert
+    - Erwartungen
+    - Verantwortlichkeiten
+    - Was kommunizieren
+    - Admin-pflichten (e.g. Teammeeting)
+    - Mode of working
+- Bila Marcel
+    - wie gehts dir, motivation 1-10
+    - was denkst du vom status quo
+    - was denkst du müssen wir in 2, 5 Jahren können
+    - was siehts du als grösstes Problem, was macht dir Mühe
+    - wo siehts du eine chance für igeb-b/bgdi
+    
+- Mode of working with Hanspi und Dani
+    - Abgrenzung
+    - Ersetzen Ressource "Andrea"
+
+- Jira mit Georges
+    - Sprints?
+    - Backlog
+    - Plugin Github
+    
+- Dave
+    - komplettieren & priorisierung der feature liste
+    - quo vadis bgdi, usp vs. arcgis pro, usp bei OGD
+
+
+- Beatenberg
+    - mode of working, github, jira, sprints
+    - architecture
+    - processes
