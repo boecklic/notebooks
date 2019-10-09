@@ -26,13 +26,26 @@
 - the lower the tech stack, the more general
 - contracts
 - microservice (-mesh?)
-    - 
+    - https://leanpub.com/service-mesh-primer
 - no premature optimization, no mixture of architecture and optimization for speed or relability
 - public vs. internal apis (motion: https://www.parlament.ch/de/ratsbetrieb/suche-curia-vista/geschaeft?AffairId=20184276)
 
 - Rewrite: https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/
 
-## REST
+- https://stackabuse.com/python-metaclasses-and-metaprogramming/
+
+## Tools
+- jupyter https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54
+
+## ORM / Postgres
+- https://emacsway.github.io/en/django-framework/
+- https://pgdash.io/blog/postgres-11-sharding.html
+
+## Docker
+- https://pythonspeed.com/articles/base-image-python-docker-images/
+
+## REST / API
+- https://cloud.google.com/apis/design/resources
 - https://martinfowler.com/articles/richardsonMaturityModel.html#level3
 - https://www.moesif.com/blog/api-guide/getting-started-with-apis/#
 - https://hackernoon.com/restful-api-designing-guidelines-the-best-practices-60e1d954e7c9?gi=6a9edea3853d
@@ -41,9 +54,23 @@
 - https://google.github.io/styleguide/jsoncstyleguide.xml#Empty/Null_Property_Values
 - https://microservices.io/patterns/apigateway.html
 - https://microservices.io/patterns/data/api-composition.html
+- https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
 - https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/#
 - https://www.spatineo.com/what-is-wfs3-ogc-api-features/ (WFS 3.0)
 - http://docs.opengeospatial.org/DRAFTS/17-069.html#rc_oas30
+- https://www.xmatters.com/integrations-blog/blog-four-rest-api-versioning-strategies/
+- https://dzone.com/articles/api-versioning-approach-with-aws-api-gateway
+- https://medium.com/@shenavi21/transforming-the-response-of-an-api-on-the-fly-65f8bad57a73
+- https://medium.com/profil-software-blog/10-things-you-need-to-know-to-effectively-use-django-rest-framework-7db7728910e0
+- https://phauer.com/2015/restful-api-design-best-practices/
+- https://www.apollographql.com/docs/apollo-server/federation/introduction/
+
+## Microservice
+- https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#api-design
+
+## Python
+- https://dev.to/dstarner/using-pythons-type-annotations-4cfe
+- https://realpython.com/python-f-strings/
 
 ## Docu
 - https://www.heise.de/ct/artikel/Stack-Overflow-Gruender-Joel-Spolsky-Dokumentation-ist-ein-Mythos-4482941.html
@@ -72,8 +99,11 @@
 - more IT knowhow (1 more senior IT/cloud position)
 - https://www.heise.de/developer/artikel/Ich-oeffne-die-Buechse-der-Pandora-Interview-mit-Alberto-Brandolini-4510288.html
 - Team-koordinator
+- leadership: https://www.nature.com/articles/s41598-019-45931-4
 - https://agilemanifesto.org/principles.html
 - one board with all tickets, two weeks sessions
+- eventstorming: https://info.codecentric.de/eventstorming-workshop-with-alberto-brandolini
+- Extreme Programming: https://www.agilealliance.org/glossary/xp/
 - clean code
     - https://www.heise.de/developer/artikel/Uncle-Bob-Nichts-geschieht-in-der-heutigen-Gesellschaft-ohne-Software-4442721.html?seite=3
     - https://www.heise.de/developer/artikel/Die-Perversion-agiler-Metaphern-4466436.html
@@ -92,6 +122,17 @@
 ## Organisation
 - https://toggl.com/ Time tracking
 
+## Cartoons
+- https://dilbert.com/
+- https://www.monkeyuser.com/2019/v-201/
+- http://www.commitstrip.com/en/2019/08/19/end-of-project-review/?
+- http://geek-and-poke.com/?offset=1456056635711
+- http://geek-and-poke.com/geekandpoke/2017/2/14/meetings-points
+- http://devhumor.com/media/front-vs-backend
+- http://devhumor.com/
+- https://failblog.cheezburger.com/thereifixedit/tag/real-life-jenga
+- https://devrant.com/rants/156294/crawling-through-some-old-code-and-asking-myself-who-wrote-it-when-did-he-write
+- https://twitter.com/iammerrick/status/777349059950485506
 
 
 
@@ -102,13 +143,17 @@ se friter
 
 ## Todo:
 - Bila Termine
+- Aggreate all tickets
 - Bila mit Patrick Gamma
 - Bila Gilbert
     - Erwartungen
     - Verantwortlichkeiten
     - Was kommunizieren
+        - ich rede gerne direkt mit den leuten -> risk (unbekannte) kompetenzen / prozesse zu verletzen
     - Admin-pflichten (e.g. Teammeeting)
-    - Mode of working
+    - Mode of working, wie organisieren wir uns (tools, meetings usw.)
+    - Vorgehen revamp geoadmin (name?), re_shp
+        - "sounding board": du, alain, dave, georges?
 - Bila Marcel
     - wie gehts dir, motivation 1-10
     - was denkst du vom status quo
