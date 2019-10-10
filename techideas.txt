@@ -151,6 +151,7 @@ se friter
     - Was kommunizieren
         - ich rede gerne direkt mit den leuten -> risk (unbekannte) kompetenzen / prozesse zu verletzen
     - Admin-pflichten (e.g. Teammeeting)
+        - wie sollen stunden gebucht werden
     - Mode of working, wie organisieren wir uns (tools, meetings usw.)
     - Vorgehen revamp geoadmin (name?), re_shp
         - "sounding board": du, alain, dave, georges?
@@ -164,6 +165,7 @@ se friter
 - Mode of working with Hanspi und Dani
     - Abgrenzung
     - Ersetzen Ressource "Andrea"
+    - Zunehmendes Auseinanderdriften zw. dev und ops, "ticketmodus", kein support bei problemen
 
 - Jira mit Georges
     - Sprints?
@@ -171,11 +173,16 @@ se friter
     - Plugin Github
     
 - Dave
+    - zeitplan
+    - name revamp bgdi
+    - "vision": wo ist der kernvalue der bgdi, auf was wollen wir uns konzentrieren
     - komplettieren & priorisierung der feature liste
     - quo vadis bgdi, usp vs. arcgis pro, usp bei OGD
 
 
 - Beatenberg
-    - mode of working, github, jira, sprints
+    - mode of working, github, jira, sprints, meetings
     - architecture
+        - orm
+        - rest
     - processes
