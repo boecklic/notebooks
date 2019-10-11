@@ -5,6 +5,8 @@
 
 # Credos
 
+- Poster drucken: Thomas Wehrli, Kartographie
+
 ## Technical
 - clean architecture: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
     - data
@@ -133,7 +135,8 @@
 - https://failblog.cheezburger.com/thereifixedit/tag/real-life-jenga
 - https://devrant.com/rants/156294/crawling-through-some-old-code-and-asking-myself-who-wrote-it-when-did-he-write
 - https://twitter.com/iammerrick/status/777349059950485506
-
+- Is it worth the time? https://xkcd.com/1205/
+- good code: https://xkcd.com/844/
 
 
 ## Franz:
@@ -155,12 +158,32 @@ se friter
     - Mode of working, wie organisieren wir uns (tools, meetings usw.)
     - Vorgehen revamp geoadmin (name?), re_shp
         - "sounding board": du, alain, dave, georges?
+    - Projekte
+        - Status MADD
+        - Status NGM (Nils österling/Roland Bamberger von Geol.)
+
+
 - Bila Marcel
+    - Framework (e.g. ORM) trifft schon viele gute Entscheidungen, -> Guideline für Junior (SQL Zugriff -> transaction a.s.o handled by ORM, Admin GUI -> security checks automatically implemented)
     - wie gehts dir, motivation 1-10
     - was denkst du vom status quo
     - was denkst du müssen wir in 2, 5 Jahren können
     - was siehts du als grösstes Problem, was macht dir Mühe
     - wo siehts du eine chance für igeb-b/bgdi
+    - wie viel direkten Kontakt zu anderen (PO, andere Stakeholder, andere Mitarbeiter ST) willst du
+    - wie stellst du dir vor, dass ich weiss, was du machst
+    - wie stellst du dir Priorisierung vor
+    - wie sieht Traumsetup aus (bez. Arbeitsmodus)
+    - stärken/schwächen
+    - austausch fördern
+    - wie eng soll ich folgen
+    - mit wem kannst du am besten arbeiten
+    
+- Bila Tobias
+    - nicht stressresistent
+
+- Bila Martin
+    - enge Begleitung
     
 - Mode of working with Hanspi und Dani
     - Abgrenzung
@@ -171,13 +194,28 @@ se friter
     - Sprints?
     - Backlog
     - Plugin Github
+    - can external people have access?
     
 - Dave
     - zeitplan
     - name revamp bgdi
     - "vision": wo ist der kernvalue der bgdi, auf was wollen wir uns konzentrieren
+    - wie GKG überzeugen
+    - Messbare Verbesserungen
+        - Zeit Datenintegration standardfall (aktuell 90 Tage, Ziel 9 Tage)
+        - Zeit Deploy (aktuell 2 Personentage pro Woche oder mehr, Ziel .25 Personentage pro Woche)
+        - KPI
     - komplettieren & priorisierung der feature liste
     - quo vadis bgdi, usp vs. arcgis pro, usp bei OGD
+    - PT Cats code in jira tickets
+    - Regeln:
+        - we estimate
+        - we/I assign
+        - you prioritize
+        - no tasks w/o ticket
+        - no work in ticket if not in sprint
+    - Technical:
+        - wie handeln wir api nutzer (plus cases wie diemo admin?)
 
 
 - Beatenberg
