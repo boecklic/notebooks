@@ -170,14 +170,20 @@ se friter
     - was denkst du müssen wir in 2, 5 Jahren können
     - was siehts du als grösstes Problem, was macht dir Mühe
     - wo siehts du eine chance für igeb-b/bgdi
-    - wie viel direkten Kontakt zu anderen (PO, andere Stakeholder, andere Mitarbeiter ST) willst du
-    - wie stellst du dir vor, dass ich weiss, was du machst
-    - wie stellst du dir Priorisierung vor
-    - wie sieht Traumsetup aus (bez. Arbeitsmodus)
-    - stärken/schwächen
+    - Arbeitsmodus
+        - wie viel direkten Kontakt zu anderen (PO, andere Stakeholder, andere Mitarbeiter ST) willst du
+        - wie stellst du dir vor, dass ich weiss, was du machst
+        - wie stellst du dir Priorisierung vor
+        - wie sieht Traumsetup aus (bez. Arbeitsmodus)
+        - mit wem kannst du am besten arbeiten
+    - Person
+        - stärken/schwächen
+        - wie eng soll ich folgen
+        - kannst du dich genügend einbringen, wirst du gehört
     - austausch fördern
-    - wie eng soll ich folgen
-    - mit wem kannst du am besten arbeiten
+    
+    
+    
     
 - Bila Tobias
     - nicht stressresistent
