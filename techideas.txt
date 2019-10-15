@@ -145,7 +145,6 @@ se friter
 
 
 ## Todo:
-- Bila Termine
 - Aggreate all tickets
 - Bila mit Patrick Gamma
 - Bila Gilbert
@@ -158,9 +157,16 @@ se friter
     - Mode of working, wie organisieren wir uns (tools, meetings usw.)
     - Vorgehen revamp geoadmin (name?), re_shp
         - "sounding board": du, alain, dave, georges?
+        - zeitplan
+        - "driver seat", wer treibt?
+        - Budget retraite
     - Projekte
         - Status MADD
         - Status NGM (Nils österling/Roland Bamberger von Geol.)
+    - Resourcen
+        - Tallk mit Hanspi betr. Menet
+        - Datenintegration, Sophie weg, Patrick und Damien machen nicht was sie sollten
+        - bitte in Resourcendiskussion miteinbeziehen, Kommunikation bis jetzt war nicht gut -> Verunsicherung
 
 
 - Bila Marcel

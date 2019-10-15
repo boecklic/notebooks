@@ -29,7 +29,8 @@ PNG_FILES := $(join \
 #PNG_FILES := $(DIO_FILES:.$(DIOEXT)=.$(PNGEXT))
 CONV_PNG_FILES := $(patsubst $(SRCDIR)/%,$(CONVERTED_PNG)/%,$(DIO_FILES:.$(DIOEXT)=.$(PNGEXT)))
 
-DOCKER_TAG=0.35.6
+#DOCKER_TAG=0.35.6
+DOCKER_TAG=1.1.4
 
 .PHONY: all
 all: vars $(HTML_FILES)
@@ -63,13 +64,22 @@ run:
 		-e LOCAL_UID=$(LOCAL_UID) \
 		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) $(CMD)
 
+# for details about how to exclude cells when converting
+# https://stackoverflow.com/a/48084050
+# requires this extension
+# https://github.com/jupyterlab/jupyterlab-celltags
 $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 	@echo $<
 	@echo $@
 	@echo $(patsubst $PWD/%,%,$<)
 	$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
-		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) jupyter nbconvert --execute --to html $< --output-dir $(dir $@)
+		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) jupyter nbconvert \
+			--execute \
+			--TagRemovePreprocessor.remove_input_tags='{"hidden"}' \
+			--TagRemovePreprocessor.remove_cell_tags='{"hidden_cell"}' \
+			--to html $< \
+			--output-dir $(dir $@)
 
 $(CONVERTED_SVG)/%.$(SVGEXT): $(SRCDIR)/%.$(DIOEXT)
 	@echo $<
