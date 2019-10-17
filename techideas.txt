@@ -147,27 +147,6 @@ se friter
 ## Todo:
 - Aggreate all tickets
 - Bila mit Patrick Gamma
-- Bila Gilbert
-    - Erwartungen
-    - Verantwortlichkeiten
-    - Was kommunizieren
-        - ich rede gerne direkt mit den leuten -> risk (unbekannte) kompetenzen / prozesse zu verletzen
-    - Admin-pflichten (e.g. Teammeeting)
-        - wie sollen stunden gebucht werden
-    - Mode of working, wie organisieren wir uns (tools, meetings usw.)
-    - Vorgehen revamp geoadmin (name?), re_shp
-        - "sounding board": du, alain, dave, georges?
-        - zeitplan
-        - "driver seat", wer treibt?
-        - Budget retraite
-    - Projekte
-        - Status MADD
-        - Status NGM (Nils österling/Roland Bamberger von Geol.)
-    - Resourcen
-        - Tallk mit Hanspi betr. Menet
-        - Datenintegration, Sophie weg, Patrick und Damien machen nicht was sie sollten
-        - bitte in Resourcendiskussion miteinbeziehen, Kommunikation bis jetzt war nicht gut -> Verunsicherung
-
 
 - Bila Marcel
     - Framework (e.g. ORM) trifft schon viele gute Entscheidungen, -> Guideline für Junior (SQL Zugriff -> transaction a.s.o handled by ORM, Admin GUI -> security checks automatically implemented)
