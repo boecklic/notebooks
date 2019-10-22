@@ -36,6 +36,8 @@
 
 - https://stackabuse.com/python-metaclasses-and-metaprogramming/
 
+- https://github.com/geostyler/geostyler
+
 ## Tools
 - jupyter https://blog.jupyter.org/99-ways-to-extend-the-jupyter-ecosystem-11e5dab7c54
 
