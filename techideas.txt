@@ -111,6 +111,7 @@
 - clean code
     - https://www.heise.de/developer/artikel/Uncle-Bob-Nichts-geschieht-in-der-heutigen-Gesellschaft-ohne-Software-4442721.html?seite=3
     - https://www.heise.de/developer/artikel/Die-Perversion-agiler-Metaphern-4466436.html
+- CRAP cycle: https://visualstudiomagazine.com/articles/2015/07/01/domain-driven-design.aspx
 
 - im moment:
     - angst etwas zu verändern
@@ -147,47 +148,12 @@ se friter
 
 
 ## Todo:
-- Aggreate all tickets
-- Bila mit Patrick Gamma
-
-- Bila Marcel
-    - Framework (e.g. ORM) trifft schon viele gute Entscheidungen, -> Guideline für Junior (SQL Zugriff -> transaction a.s.o handled by ORM, Admin GUI -> security checks automatically implemented)
-    - wie gehts dir, motivation 1-10
-    - was denkst du vom status quo
-    - was denkst du müssen wir in 2, 5 Jahren können
-    - was siehts du als grösstes Problem, was macht dir Mühe
-    - wo siehts du eine chance für igeb-b/bgdi
-    - Arbeitsmodus
-        - wie viel direkten Kontakt zu anderen (PO, andere Stakeholder, andere Mitarbeiter ST) willst du
-        - wie stellst du dir vor, dass ich weiss, was du machst
-        - wie stellst du dir Priorisierung vor
-        - wie sieht Traumsetup aus (bez. Arbeitsmodus)
-        - mit wem kannst du am besten arbeiten
-    - Person
-        - stärken/schwächen
-        - wie eng soll ich folgen
-        - kannst du dich genügend einbringen, wirst du gehört
-    - austausch fördern
-    
-    
-    
-    
-- Bila Tobias
-    - nicht stressresistent
-
-- Bila Martin
-    - enge Begleitung
     
 - Mode of working with Hanspi und Dani
     - Abgrenzung
     - Ersetzen Ressource "Andrea"
     - Zunehmendes Auseinanderdriften zw. dev und ops, "ticketmodus", kein support bei problemen
 
-- Jira mit Georges
-    - Sprints?
-    - Backlog
-    - Plugin Github
-    - can external people have access?
     
 - Dave
     - zeitplan
