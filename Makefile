@@ -68,11 +68,13 @@ run:
 # https://stackoverflow.com/a/48084050
 # requires this extension
 # https://github.com/jupyterlab/jupyterlab-celltags
+# Note: the '-' before $(DOCKER) tells make to ignore errors in
+#       this command and continues
 $(CONVERTED_HTML)/%.$(HTMLEXT): $(SRCDIR)/%.$(SRCEXT)
 	@echo $<
 	@echo $@
 	@echo $(patsubst $PWD/%,%,$<)
-	$(DOCKER) run --rm --init \
+	-$(DOCKER) run --rm --init \
 		-e LOCAL_UID=$(LOCAL_UID) \
 		-v $(PWD):/home/user $(DOCKERHUB_USER)/jupylab\:$(DOCKER_TAG) jupyter nbconvert \
 			--execute \
