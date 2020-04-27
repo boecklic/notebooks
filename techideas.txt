@@ -69,6 +69,10 @@
 - https://phauer.com/2015/restful-api-design-best-practices/
 - https://www.apollographql.com/docs/apollo-server/federation/introduction/
 
+Versioning REST
+- https://www.troyhunt.com/your-api-versioning-is-wrong-which-is/
+
+
 ## Microservice
 - https://www.vinaysahni.com/best-practices-for-building-a-microservice-architecture#api-design
 
